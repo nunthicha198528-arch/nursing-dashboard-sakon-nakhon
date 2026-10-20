@@ -22,7 +22,7 @@
   <div class="modal" id="modal"><div class="modal-box"><h2 class="section-title">เข้าสู่ระบบเพื่อนำเข้า Excel</h2><div class="form-row"><label>Username</label><input class="input" id="username" value="admin" autocomplete="username"></div><div class="form-row"><label>Password</label><input class="input" id="password" type="password" value="1234" autocomplete="current-password"></div><div class="form-row"><label>ไฟล์ Excel</label><input class="input" id="file" type="file" accept=".xlsx,.xls"></div><div class="hint">ระบบจะตรวจสอบหัวตารางและแปลงข้อมูลก่อนบันทึกลง Google Sheet</div><div id="importStatus" class="status"></div><div class="actions" style="justify-content:flex-end;margin-top:18px"><button class="btn soft" id="cancelBtn">ยกเลิก</button><button class="btn primary" id="submitBtn">ตรวจสอบและนำเข้า</button></div></div></div>
   <script>
     // ใส่ URL Web App ของ Google Apps Script ที่ Deploy แล้วตรงนี้
-    const GAS_URL = 'https://script.google.com/macros/s/AKfycbyLiUEcSV-ME7WfoKRETcdf0pu_k3lTHQBBX1dCzUVz8MZXg0lkdSU2okkb0-nZzEI/exec';
+    const GAS_URL = 'https://script.google.com/macros/s/AKfycbwkdpLTIOydJd_WR5V6OpkUMdAXXR-HNf4YG6ZI19a1gx87WPfjWbilv-MjJrVXHEOO/exec';
     let allData = [], filtered = [];
     const $ = id => document.getElementById(id);
     const showStatus = (el, msg, ok=false) => { el.textContent=msg; el.className='status '+(ok?'ok':'error'); };
